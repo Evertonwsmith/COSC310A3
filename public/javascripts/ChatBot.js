@@ -60,7 +60,7 @@ function generateResponse(){
 					response = null;
 				}
 			}else if(equalStr(response, "%translate")){ //Check if translate should be called to get a response
-				
+
 				if(outliers.length > 0){
 					let translateStr = "";
 					for(let i = 0; i < outliers.length; i++){
@@ -158,12 +158,38 @@ var testPhrases = [
 	["On peut faire un jeu?","Bien sûr! Tu veux jouer à quoi? Je connais le pendu"],
 	["Do you want to play a game?","That sounds like fun! What should we play? I know how to play hangman and 20 questions."],
 	["Est ce que tu veux jouer à un jeux?","Ça peut être drôle! Tu veux jouer à quoi? Je connais le pendu"],
-	
+
+	//Everton: Disregard sport topic
+	["Do you like","I'm not sure I understand."],
+	["Do you play","That depends on what you're talking about."],
+	["Soccer","I've never been a fan, but it's popular in France."],
+	["Hockey","I've never heard of that."],
+	["Football","American football? No thank you."],
+	["Do you like Soccer?","I can't play sports. Or watch them. So no."],
+	["Do you play Soccer?","With these legs? No."],
+	["Do you like Hockey?","No, is that all you Canadians talk about?"],
+	["Do you play Hockey?","I don't do well on ice."],
+	["Do you like Football?","I've never seen it, is it like soccer?"],
+	["Do you play Football?","How would that work?"],
+	["Do you like sports?","Unfortunetly, I have never been a fan."],
+	["Do you play sports?","I'm not sure what sports I would be able to play."],
+	//Everton: French/France related facts
+	["What percent of the world speaks French?","Almost 30%! Do you?"],
+	["What are popular French names?","The most popular girls name is Marie, and Thomas for boys."],
+	["How many countries speak French?","Well lots speak French, but 29 countries have French as the official language!"],
+	["French","It's a wonderful language, the number of French speakers has TRIPLED since 1945!"],
+	["How many people live in France?","Around 67.2 million people."],
+	["What's the capital of France?","Paris, it has over 2 million people!"],
+	["What's in Paris?","You can see many things, like the Eiffel Tower, Notre Dame, Louvre, Montmartre, Arc de Triomphe, the river Seine and others."],
+	["What's in France?","There are many things, like the Eiffel Tower, Tour de France, the French Riviera and even Disneyland Paris!"],
+	["Why is French a romance language?","French gets its origins from the Latin language, making it a romance language."],
+	["France","France is lovely, will you take me?"],
+
 	["Let's play hangman.","%hangmanStartEnglish"],
 	["Jouons au pendu.","%hangmanStartFrench"],
 	["Let's play 20 questions.","%20questionsStartEnglish"],
 	["Jouons aux devinettes.","%20questionsStartFrench"],
-	
+
 	["I’m sad.","Oh no, I’m sorry to hear that."],
 	["Je suis triste.","Oh non, je suis désolé d’entendre ça."],
 	["I’m angry.","Don’t be angry, it’s a beautiful day!"],
@@ -241,7 +267,7 @@ var testPhrases = [
 	["Peux-tu traduire _ en Français","%translate"],
 	["What is _ in French?","%translate"],
 	["Quel est le mot français pour _","%translate"],
-	
+
 	["Are there any","%hangman"],
 	["Y-a t-il un", "%hangman"],
 	["Is there a","%hangman"],
@@ -337,7 +363,7 @@ for(let i = 0; i < E2FDictionary.length; i++){
 	F2EDictionary[i][0] = E2FDictionary[i][1];
 	F2EDictionary[i][1] = E2FDictionary[i][0];
 }
-	
+
 //Define ChatTrie:
 var trie = new ChatTrie(testPhrases);
 //Test if Trie is built:

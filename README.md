@@ -10,6 +10,7 @@ COSC 310 - Group 24
 * [How To Host The Project Locally](#How-To-Host-The-Project-Locally)
 * [File Structure](#File-Structure)
 * [Function Descriptions](#Function-Descriptions)
+* [Version 2.0 - Assignment 3](#Version 2.0)
 
 ## About
 
@@ -87,3 +88,20 @@ In **Public > Javascripts**, we have 'ChatBot.js' which includes all the main fu
     * getInitialStatement() - Contains the initial statement once a game of hangman is started.
     * getGuessFromString(str) - This functions extracts the letter guessed by the user from their input.
   * getHangmanResponse(str) - This function makes use of the functions above in order to start the game, and calls the appropriate functions throughout the game.
+
+## Version 2.0
+
+* **Added Topic**
+  * France: Cell Bot now answers questions about France. It can tell you population facts and what exists within the country.
+  * French facts: Cell Bot can answer questions you have about the French language. Statistical facts and historical facts can be given.
+
+* **Unrelated Topic Handling**
+  * Sports topics will be answered with disinterest by Cell Bot.
+  * Sports in general is avoided, including Hockey, Soccer and Football.
+
+* **Chat History**
+  * Our Cell Bot has an easy to use scroll bar located on the right of the screen. This allows you to scroll back through your entire conversation.
+  * Time stamps on each message allows users to track when messages were sent and received.
+
+* **Spelling errors**
+ * Our Cell Bot handles most spelling errors. It tries to find the closest word that makes logical sense within the context of the sentence.
