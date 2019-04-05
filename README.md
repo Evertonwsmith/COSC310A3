@@ -10,7 +10,7 @@ COSC 310 - Group 24
 * [How To Host The Project Locally](#How-To-Host-The-Project-Locally)
 * [File Structure](#File-Structure)
 * [Function Descriptions](#Function-Descriptions)
-* [Version 2.0 - Assignment 3](#Version 2.0)
+* [Version 2.0 - Assignment 3](#Version-2.0)
 
 ## About
 
@@ -104,4 +104,4 @@ In **Public > Javascripts**, we have 'ChatBot.js' which includes all the main fu
   * Time stamps on each message allows users to track when messages were sent and received.
 
 * **Spelling errors**
- * Our Cell Bot handles most spelling errors. It tries to find the closest word that makes logical sense within the context of the sentence.
+  * Our Cell Bot handles most spelling errors. It tries to find the closest word that makes logical sense within the context of the sentence.
