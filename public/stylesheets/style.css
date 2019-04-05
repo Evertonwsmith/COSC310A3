@@ -1,0 +1,124 @@
+html,body {
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	background: #444444;
+}
+
+input[type=button] {
+	padding: 5px;
+	border: 2px solid #B5D1E5;
+	border-radius: 5px;
+}
+
+.msgContainer {
+	margin-top: 15px;
+	margin-left: 0%;
+	margin-right: 0%;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.textBox {
+	resize: horizontal;
+	width: 80%;
+	height: 25px;
+	padding: 15px 5px;
+	border: 2px solid #B5D1E5;
+	border-radius: 5px;
+}
+
+.yourText {
+	overflow-wrap: break-word;
+	width: 80%;
+	background: #B5D1E5;
+	padding: 7px;
+	margin-bottom: 2px;
+	box-shadow: 3px 3px 7px #444444;
+	border-radius: 10px;
+}
+
+.itsText {
+	overflow-wrap: break-word;
+	width: 80%;
+	background: #D1B5E5;
+	padding: 7px;
+	margin-bottom: 2px;
+	margin-left: 20%;
+	box-shadow: 3px 3px 7px #444444;
+	border-radius: 10px;
+}
+
+.title {
+	position: fixed;
+	padding: 30px;
+	margin-right: 75%;
+	color: #D1B5E5;
+	text-shadow: 3px 3px 3px black;
+	top: 0;
+	left: 0;
+}
+
+.yourTime {
+	width: 100%;
+	text-align: left;
+	padding-left: 5px;
+	color: #CCCCCC;
+	font-size: 12px;
+}
+
+.itsTime {
+	width: 100%;
+	text-align: right;
+	padding-right: 5px;
+	color: #CCCCCC;
+	font-size: 12px;
+}
+
+#conv::-webkit-scrollbar-track {
+	/* ? */
+}
+
+#conv::-webkit-scrollbar {
+	width: 10px;
+}
+
+#conv::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #444;
+}
+
+#conv {
+	position: fixed;
+	overflow: scroll;
+	overflow-x: hidden;
+	left: 25%;
+	width: 50%;
+	height: 90%;
+	background: #6F818E;
+	box-shadow: 0px 0px 20px black;
+}
+
+#inputs {
+	position: fixed;
+	bottom: 0;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 15px;
+	text-align: center;
+}
+
+#errorPage {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+}
+
+#info {
+	color: white;
+	text-align: justify;
+	text-shadow: none;
+	margin-right:20%;
+}
