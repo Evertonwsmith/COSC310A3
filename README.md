@@ -105,3 +105,8 @@ In **Public > Javascripts**, we have 'ChatBot.js' which includes all the main fu
 
 * **Spelling errors**
   * Our Cell Bot handles most spelling errors. It tries to find the closest word that makes logical sense within the context of the sentence.
+
+* **All New Features**
+  * Sports topic avoidance.
+  * France facts added as a new topic.
+  * French language facts add as a new topic.
