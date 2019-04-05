@@ -108,5 +108,11 @@ In **Public > Javascripts**, we have 'ChatBot.js' which includes all the main fu
 
 * **All New Features**
   * Sports topic avoidance.
+    * A reasonable response is given, but the topic is of no interest of Cell Bot.
+    * See the video submission for an example.
   * France facts added as a new topic.
+    * Sticking to the theme of the French language, facts about France can be given.
+    * Asking about or mentioning France will trigger related responses.
   * French language facts add as a new topic.
+    * Much like the facts on France, facts about the French language can be given.
+    * See the video for examples.
